@@ -64,10 +64,10 @@ for mk in mata_kuliah_terpilih:
 data_mahasiswa = {}
 
 def tambah_mahasiswa():
-	nama = input("Masukkan nama : ")
-	npm = input("Masukkan npm : ")
-	data_mahasiswa[nama] = {"npm": npm}
-	print("Data pengguna ditambahkan.\n")
+   nama = input("Masukkan nama : ")
+   npm = input("Masukkan npm : ")
+   data_mahasiswa[nama] = {"npm": npm}
+   print("Data pengguna ditambahkan.\n")
 
 def tampilkan_mahasiswa():
    if not data_mahasiswa:
