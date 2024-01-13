@@ -1,0 +1,202 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	background-color: #252734;
+	color: white;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	gap: 3rem;
+	padding-top: 5rem;
+	height: auto;
+	margin-bottom: 5rem;
+}
+
+.profile-image {
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
+	background-image: url('../assets/img/fotoorang.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.profile-about {
+	width: 40rem;
+	height: auto;
+	border-radius: 50%;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 1rem;
+}
+
+.navbar-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+.navbar-text {
+	color: white;
+	text-decoration: none;
+}
+
+.navbar-title {
+	font-size: 0.7rem;
+	font-weight: bold;
+}
+
+.project {
+	padding: 2rem;
+}
+
+.project-row h1 {
+	font-size: 2.5rem;
+	color: #ffffff;
+	margin-bottom: 1rem;
+}
+
+.project-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	padding: 2rem;
+}
+
+.project-card {
+	width: 20rem;
+	height: auto;
+	background-color: #FD9609;
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+.project-image {
+	width: 100%;
+	height: 12rem;
+}
+
+.center {
+	text-align: center;
+}
+
+.project-desc {
+	font-size: 0.7rem;
+	color: white;
+}
+
+h3 {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+button {
+	background-color: #FD9609;
+	padding: 0.7rem;
+	border: none;
+	border-radius: 20px;
+	font-weight: bold;
+	margin-top: 1rem;
+}
+
+button a{
+	text-decoration: none;
+	color: white;
+}
+
+p {
+	font-size: 0.7em;
+}
+
+ul li {
+	list-style: none;
+}
+
+/* Form */
+
+.form {
+text-align: center;
+padding: 2rem;
+}
+
+.form form {
+padding: 1rem;
+margin-bottom: 2rem;
+max-width: 400px;
+margin: 0 auto;
+}
+
+.form form label {
+display: block;
+margin-bottom: 0.5rem;
+color: #FD9609;
+}
+
+.form form input,
+.form form textarea {
+width: 100%;
+padding: 0.5rem;
+margin-bottom: 1rem;
+border: 1px solid #FD9609;
+border-radius: 5px;
+}
+
+.form form button {
+background-color: #FD9609;
+padding: 0.7rem;
+color: white;
+border: none;
+border-radius: 5px;
+font-weight: bold;
+margin: 10px;
+cursor: pointer;
+width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+	html, body {
+        height: 100%;
+    }
+
+    .container {
+        min-height: 100vh; 
+        height: auto; 
+    }
+
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-image {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .profile-about {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .project-row {
+        flex-direction: column;
+    }
+
+    .project-card {
+        margin-bottom: 2rem;
+    }
+}
